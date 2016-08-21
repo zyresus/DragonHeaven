@@ -68,7 +68,7 @@ exports.loginserverpublickey = "-----BEGIN RSA PUBLIC KEY-----\n" +
 //   like the upside-down exclamation mark (looks like an i), the Greek omicron (looks
 //   like an o), etc. Disable only if you need one of the alphabets it disables, such as
 //   Greek or Cyrillic.
-exports.disablebasicnamefilter = false;
+exports.disablebasicnamefilter = true;
 
 // report joins and leaves - shows messages like "<USERNAME> joined"
 //   Join and leave messages are small and consolidated, so there will never
@@ -267,14 +267,12 @@ exports.grouplist = [
 		id: "dragonknight",
 		name: "Dragon Knight",
 		inherit: '~',
-		globalonly: true
 	},
 	{
 		symbol: '~',
 		id: "admin",
 		name: "Administrator",
 		root: true,
-		globalonly: true,
 	},
 	{
 		symbol: '&',
@@ -295,7 +293,6 @@ exports.grouplist = [
 		editroom: true,
 		potd: true,
 		disableladder: true,
-		globalonly: true,
 		tournamentsmanagement: true,
 		gamemanagement: true,
 	},
@@ -317,10 +314,11 @@ exports.grouplist = [
 		roombot: true,
 		roommod: true,
 		roomdriver: true,
+		roommeme: true,
+		roomoperator: true,
 		editroom: true,
 		declare: true,
 		modchatall: true,
-		roomonly: true,
 		tournamentsmanagement: true,
 		gamemanagement: true,
 	},
@@ -331,7 +329,6 @@ exports.grouplist = [
 		inherit: '+',
 		roomvoice: true,
 		modchat: true,
-		roomonly: true,
 		editroom: true,
 		joinbattle: true,
 	},
@@ -393,7 +390,7 @@ exports.grouplist = [
 		joinbattle: true
 	},
 	{
-		symbol: '>',
+		symbol: '£',
 		id: "meme",
 		name: "Esteemed Meme",
 		inherit: '+',
